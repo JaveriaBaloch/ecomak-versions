@@ -1,0 +1,438 @@
+.homePage_hero{
+    background: $hero-gradient, url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .form-control{
+        text-align: left;
+        color: rgba(18, 28, 3, 0.349);
+    }
+
+    .form-control:focus{
+        color: green;
+    }
+}
+.hero-heading{
+    font-family: 2rem;
+}
+.hero-center{
+    align-self: center;
+}
+.hero-heading,.hero-para{
+    font-family: $heading-font-family;
+    background: $hero-linear-text-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subscribe-heading,.subscribe-para{
+    font-family: $heading-font-family;
+    background: $subscribe-heading;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-para,.subscribe-para{
+    font-family: $hero-para-text;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+.hero-para{
+    margin: 3rem 0;
+
+}
+.homePage_part1{
+    background: linear-gradient(-70deg,rgb(85, 221, 6) 25%,rgb(199, 37, 37)25%,rgb(199, 37, 37) 50%,rgb(255, 255, 255) 50%);
+    .container{
+        width: 90%;
+        .row{
+            .col-lg-6{
+                display: flex;
+                align-items: center;
+                img{
+                    width: inherit;
+                }
+            }
+        }
+    }
+}
+.homePage_part2{
+    background: linear-gradient(70deg, rgba(54, 53, 53, 0.582)15%, rgba(4, 70, 4, 0.914) 15%,rgba(2, 71, 2, 0.89) 90%,rgba(83, 82, 82, 0.452)90%), url(../img/deforestation.jpg);
+    background-position: center;
+    background-size: cover;
+    .container{
+        .row{
+            .col{
+                h1{
+                    color:rgb(92, 233, 92);
+                    font-family: $heading-font-family;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    .list-group-item{
+        margin: 0.3rem auto;
+        border-radius: 50%;
+        width: 200px;
+        background: linear-gradient(-60deg,rgb(170, 252, 7), rgb(30, 142, 30),rgb(14, 124, 14));
+    }
+}
+.homePage_Part3{
+    background: linear-gradient(75deg, rgba(40, 31, 31, 0.856) 70%,rgba(128, 128, 128, 0.708) 70%), url(../img/dark.jpg);
+    background-position: right top;
+    background-size: cover;
+    .container{
+        .row{
+            .col-lg-7{
+                h1{
+                    color:rgb(170, 207, 35);
+                    font-family: $heading-font-family;
+                    font-size: 3rem;
+                }
+                p{
+                    color:$universal-white-text;
+
+                }
+            }
+            .col-lg-4{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin-left: auto;
+                    border-radius: 50%;
+                    padding: 2rem;
+                    object-fit: cover;
+                    transition: 1s all;
+                    background:linear-gradient(45deg, yellow,green,seagreen,rgb(252, 232, 15)) ;
+                    &:hover{
+                        transform: scale(1.13) rotate(30deg);
+                        box-shadow: white 5px 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.homePage_Part4{
+    position: relative;
+    background-color:rgb(49, 21, 21) ;
+    overflow: hidden;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        top: -30%;
+        left: 0;
+        width: 100%;
+        height: 100rem;
+        transform: rotate(360deg);
+        background: linear-gradient(67deg,rgb(17, 80, 1)50%,rgb(22, 10, 18)50%);
+        z-index: -1;
+        animation: work 8s infinite;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: -20%;
+        left: 0;
+        width: 100%;
+        height: 500%;
+        background: linear-gradient(-89deg,rgb(33, 163, 0)30%,rgb(17, 68, 44)30%,rgb(12, 73, 0)70%,rgb(0, 24, 56)70%);
+        z-index: -1;
+        animation: work 8s infinite;
+    }
+    .container{
+        .row{
+            text-align: center;
+            h1{
+                font-family: $heading-font-family;
+                font-size: 4rem;
+                color:white;
+            }
+            .row{
+                .col-lg-3{
+                    .card{
+                        &:hover{
+                        .card1{
+                                 transform: translateY(-400px);
+                            }
+                        }
+                        &:hover{
+                            .card2{
+                                transform: translateY(-460px);
+                           }
+                        }
+                        &:hover{
+                           .card3{
+                                transform: translateY(-420px);
+                           }
+                        }
+                        overflow: hidden;
+                        width: 20rem;
+                        height: 400px;
+                        img{
+                            background-position: right bottom;
+                            height: 500px;
+                            width: 450px;
+                            object-fit: cover;
+                        }
+                        overflow: hidden;
+                        color: white;
+                        .card-body-text{
+                            height: 500px;
+                            padding-top: 1rem;
+                        }
+                        .card-body{
+                            .card-header{
+                                background: rgba(0, 0, 0, 0.167);
+                                .card-title{
+                                    font-family: $heading-font-family;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                       .card1,.card2,.card3{
+                           background:repeating-linear-gradient(70deg, rgb(9, 54, 9)10%, rgb(55, 152, 10)20%,rgb(9, 54, 9)30%);
+                       }
+                       .card1{
+                           transform: translateY(-7.3rem);
+                           transition: all 2s;
+                           &:hover{
+                            transform: translateY(-400px);
+                           }
+                       }
+                       .card2{
+                        transform: translateY(-12rem);
+                        transition: all 2s;
+                        &:hover{
+                         transform: translateY(-460px);
+                        }
+                    }
+                    .card3{
+                        transform: translateY(-8.7rem);
+                        transition: all 2s;
+                        &:hover{
+                         transform: translateY(-430px);
+                        }
+                    }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
+.homePage_Part5{
+    background: white;
+    .container{
+        .row{
+            h1{
+                color: green;
+                font-family: $heading-font-family;
+                font-size: 3rem;
+                text-align: center;
+            }
+            .col-lg-3{
+                    .card{
+                        border-radius: 0;
+                        overflow:visible;
+                        border: 0;
+                        position: relative;
+                        width: 300px;
+                        z-index: 1;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            top: 20px;
+                            left: 20px;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -2;
+                            background: linear-gradient(45deg, rgb(194, 147, 116),rgb(69, 197, 69), rgb(146, 192, 94));
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            top: 10px;
+                            left: 10px;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            background: linear-gradient(45deg, rgb(138, 100, 70),green, rgb(136, 255, 0));
+                        }
+                        .card-body{
+                            height: 410px;
+                            width: 300px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border-radius: 0;
+                            color: white;
+                            background: $our_Impact_card_linear_gradient;
+                            img{
+                                width: 180px;
+                                height: 180px;
+                            }
+                        }
+                     }
+                
+                 }
+             }
+        }
+    }
+.homePage_Part6{
+    position: relative;
+    background-color:rgb(49, 21, 21) ;
+    overflow: hidden;
+    z-index: 1;
+    .container{
+        .gutter-2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .row{
+            h1{
+                font-size: 3.5rem;
+                font-family: $heading-font-family;
+            }
+            img{
+                margin: 1rem !important;
+                width: 150px;
+            }
+            .col-lg-4{
+                margin: auto;
+                background: $our_Impact_card_linear_gradient;
+                border: rgb(173, 209, 14) 0.4rem double;
+                height: 20rem;
+                padding-top:2rem ;
+                border-radius: 1rem;
+                position: relative;
+                box-shadow: rgba(0, 255, 8, 0.397) 20px 20px 0px;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        top: -30%;
+        left: 0;
+        width: 100%;
+        height: 100rem;
+        transform: rotate(360deg);
+        background: linear-gradient(67deg,rgb(17, 80, 1)50%,rgb(22, 10, 18)50%);
+        z-index: -1;
+        animation: work 8s infinite;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: -20%;
+        left: 0;
+        width: 100%;
+        height: 500%;
+        background: linear-gradient(-89deg,rgb(33, 163, 0)30%,rgb(17, 68, 44)30%,rgb(12, 73, 0)70%,rgb(0, 24, 56)70%);
+        z-index: -1;
+        animation: work 8s infinite;
+    }
+}
+.homePage_Part7{
+    background: rgb(220, 255, 220);
+    padding-bottom: 6rem;
+    .container{
+        .row{
+            h1{
+                font-family: $heading-font-family;
+                color: rgb(0, 98, 0);
+                margin: 0 auto;
+                font-size: 2.5rem;
+            }
+            img{
+                width: 250px;
+                height: 180px;
+                object-fit: cover;
+                margin: 1rem auto;
+            }
+        }
+
+    }
+}
+.footer{
+    background: rgb(5, 52, 3);
+    padding: 3rem;
+    color: #fff;
+    .container{
+        ul{
+            margin: 0 auto;
+            width: 18rem;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+           li{
+               a{
+                   font-size: 1.2rem;
+                   color: #fff;
+               }
+           }
+        }
+    }
+}
+///animations
+@keyframes work {
+    0%{
+     transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (max-width: 991px){
+    .homePage_part1{
+        background:rgb(211, 211, 211);
+        .container{
+            .row{
+                .col-lg-6{
+                    display: flex;
+                    align-items: center;
+                    img{
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+    .homePage_Part3{
+        background:linear-gradient(78deg, rgb(1, 26, 13) 70%,rgba(0, 0, 0, 0.921) 70%);
+        .container{
+            .row{
+                .col-lg-4{
+                    img{
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+    .homePage_Part7{
+        background: rgb(220, 255, 220);
+        .container{
+            .row{
+                h1{
+                    font-family: $heading-font-family;
+                    color: rgb(0, 98, 0);
+                }
+                img{
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                    margin: 1rem auto;
+                }
+            }
+    
+        }
+    }
+}
